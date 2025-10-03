@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/pages/feed_page.dart';
+import 'package:flutter_basic/pages/portfolio/portfolio_summary.dart';
 import 'package:flutter_basic/pages/portfolio_page.dart';
 import 'package:flutter_basic/pages/profile_page.dart';
 
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [FeedPage(), PortfolioPage(), ProfilePage()];
+  final List<Widget> _pages = [PortfolioSummary(), PortfolioPage(), ProfilePage()];
 
   @override
   Widget build(BuildContext context) {
